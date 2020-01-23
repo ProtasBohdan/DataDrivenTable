@@ -12,8 +12,8 @@ protocol ConfiguratorType {
     associatedtype Item
     associatedtype Cell: UITableViewCell
 
-    func reuseIdentifier(for item: Item, indexPath: IndexPath) -> String
     func registerCells(in tableView: UITableView)
+    func reuseIdentifier(for item: Item, indexPath: IndexPath) -> String
     func configuredCell(for item: Item, tableView: UITableView, indexPath: IndexPath) -> Cell
 }
 
@@ -21,10 +21,10 @@ struct Configurator<Item, Cell: UITableViewCell>: ConfiguratorType {
     typealias CellConfigurator = (Cell, Item, UITableView, IndexPath) -> Cell
 
     let configurator: CellConfigurator
-    let reuseIdentifier = "\(Cell.self)"
+    let cellReuseIdentifier = Cell.reuseIdentifier
 
     func reuseIdentifier(for item: Item, indexPath: IndexPath) -> String {
-        return reuseIdentifier
+        return cellReuseIdentifier
     }
 
     func configure(cell: Cell, item: Item, tableView: UITableView, indexPath: IndexPath) -> Cell {
@@ -32,13 +32,7 @@ struct Configurator<Item, Cell: UITableViewCell>: ConfiguratorType {
     }
 
     func registerCells(in tableView: UITableView) {
-        if let path = Bundle.main.path(forResource: "\(Cell.self)", ofType: "nib"),
-            FileManager.default.fileExists(atPath: path) {
-            let nib = UINib(nibName: "\(Cell.self)", bundle: .main)
-            tableView.register(nib, forCellReuseIdentifier: reuseIdentifier)
-        } else {
-            tableView.register(Cell.self, forCellReuseIdentifier: reuseIdentifier)
-        }
+        tableView.register(Cell.nib, forCellReuseIdentifier: cellReuseIdentifier)
     }
 
     func configuredCell(for item: Item, tableView: UITableView, indexPath: IndexPath) -> Cell {
@@ -46,4 +40,6 @@ struct Configurator<Item, Cell: UITableViewCell>: ConfiguratorType {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! Cell
         return self.configure(cell: cell, item: item, tableView: tableView, indexPath: indexPath)
     }
+
+
 }

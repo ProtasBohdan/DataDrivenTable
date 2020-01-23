@@ -8,11 +8,14 @@
 
 import UIKit
 
-class NibTableViewCell: UITableViewCell {
+class TextButtonTableViewCell: UITableViewCell {
 
     @IBOutlet var actionButton: UIButton!
     @IBOutlet var titleLabel: UILabel!
 
-    
+    override func prepareForReuse() {
+        actionButton.setTitle("", for: .normal)
+        titleLabel.text = ""
+    }
     
 }

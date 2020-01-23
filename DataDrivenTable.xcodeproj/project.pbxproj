@@ -12,8 +12,13 @@
 		B888FBDE23D9D202009675B8 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBDD23D9D202009675B8 /* Section.swift */; };
 		B888FBE023D9D226009675B8 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBDF23D9D226009675B8 /* Configurator.swift */; };
 		B888FBE223D9D380009675B8 /* PluginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBE123D9D380009675B8 /* PluginTableViewController.swift */; };
-		B888FBE623D9D591009675B8 /* NibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBE423D9D591009675B8 /* NibTableViewCell.swift */; };
-		B888FBE723D9D591009675B8 /* NibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B888FBE523D9D591009675B8 /* NibTableViewCell.xib */; };
+		B888FBE623D9D591009675B8 /* TextButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBE423D9D591009675B8 /* TextButtonTableViewCell.swift */; };
+		B888FBE723D9D591009675B8 /* TextButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B888FBE523D9D591009675B8 /* TextButtonTableViewCell.xib */; };
+		B888FBEB23D9DD21009675B8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBEA23D9DD21009675B8 /* SecondViewController.swift */; };
+		B888FBF523D9DFCE009675B8 /* TextImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBF323D9DFCE009675B8 /* TextImageTableViewCell.swift */; };
+		B888FBF623D9DFCE009675B8 /* TextImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B888FBF423D9DFCE009675B8 /* TextImageTableViewCell.xib */; };
+		B888FBF823D9E801009675B8 /* CustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBF723D9E801009675B8 /* CustomModel.swift */; };
+		B888FBFC23D9F2DC009675B8 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888FBFB23D9F2DC009675B8 /* UIView + Extensions.swift */; };
 		B8C8231523D8F9A300A2FB89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C8231423D8F9A300A2FB89 /* AppDelegate.swift */; };
 		B8C8231923D8F9A300A2FB89 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C8231823D8F9A300A2FB89 /* FirstViewController.swift */; };
 		B8C8231C23D8F9A300A2FB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C8231A23D8F9A300A2FB89 /* Main.storyboard */; };
@@ -27,8 +32,13 @@
 		B888FBDD23D9D202009675B8 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		B888FBDF23D9D226009675B8 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		B888FBE123D9D380009675B8 /* PluginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginTableViewController.swift; sourceTree = "<group>"; };
-		B888FBE423D9D591009675B8 /* NibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibTableViewCell.swift; sourceTree = "<group>"; };
-		B888FBE523D9D591009675B8 /* NibTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibTableViewCell.xib; sourceTree = "<group>"; };
+		B888FBE423D9D591009675B8 /* TextButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewCell.swift; sourceTree = "<group>"; };
+		B888FBE523D9D591009675B8 /* TextButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextButtonTableViewCell.xib; sourceTree = "<group>"; };
+		B888FBEA23D9DD21009675B8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B888FBF323D9DFCE009675B8 /* TextImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageTableViewCell.swift; sourceTree = "<group>"; };
+		B888FBF423D9DFCE009675B8 /* TextImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextImageTableViewCell.xib; sourceTree = "<group>"; };
+		B888FBF723D9E801009675B8 /* CustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModel.swift; sourceTree = "<group>"; };
+		B888FBFB23D9F2DC009675B8 /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		B8C8231123D8F9A300A2FB89 /* DataDrivenTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataDrivenTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C8231423D8F9A300A2FB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8C8231823D8F9A300A2FB89 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -73,8 +83,8 @@
 		B888FBE323D9D57B009675B8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				B888FBE423D9D591009675B8 /* NibTableViewCell.swift */,
-				B888FBE523D9D591009675B8 /* NibTableViewCell.xib */,
+				B888FBF223D9DFB7009675B8 /* TextImageTableViewCell */,
+				B888FBF123D9DFA9009675B8 /* TextButtonTableVeiwCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -83,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B8C8231823D8F9A300A2FB89 /* FirstViewController.swift */,
+				B888FBEA23D9DD21009675B8 /* SecondViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -91,8 +102,35 @@
 			isa = PBXGroup;
 			children = (
 				B888FBD923D9D184009675B8 /* UIViewController + Extensions.swift */,
+				B888FBFB23D9F2DC009675B8 /* UIView + Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B888FBEC23D9DD85009675B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B888FBF723D9E801009675B8 /* CustomModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B888FBF123D9DFA9009675B8 /* TextButtonTableVeiwCell */ = {
+			isa = PBXGroup;
+			children = (
+				B888FBE423D9D591009675B8 /* TextButtonTableViewCell.swift */,
+				B888FBE523D9D591009675B8 /* TextButtonTableViewCell.xib */,
+			);
+			name = TextButtonTableVeiwCell;
+			sourceTree = "<group>";
+		};
+		B888FBF223D9DFB7009675B8 /* TextImageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B888FBF323D9DFCE009675B8 /* TextImageTableViewCell.swift */,
+				B888FBF423D9DFCE009675B8 /* TextImageTableViewCell.xib */,
+			);
+			name = TextImageTableViewCell;
 			sourceTree = "<group>";
 		};
 		B8C8230823D8F9A300A2FB89 = {
@@ -116,6 +154,7 @@
 			children = (
 				B8C8231423D8F9A300A2FB89 /* AppDelegate.swift */,
 				B8C8231A23D8F9A300A2FB89 /* Main.storyboard */,
+				B888FBEC23D9DD85009675B8 /* Models */,
 				B888FBE823D9D5FF009675B8 /* View Controllers */,
 				B888FBE323D9D57B009675B8 /* Cells */,
 				B888FBE923D9D615009675B8 /* Extensions */,
@@ -183,8 +222,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B888FBF623D9DFCE009675B8 /* TextImageTableViewCell.xib in Resources */,
 				B8C8232123D8F9A500A2FB89 /* LaunchScreen.storyboard in Resources */,
-				B888FBE723D9D591009675B8 /* NibTableViewCell.xib in Resources */,
+				B888FBE723D9D591009675B8 /* TextButtonTableViewCell.xib in Resources */,
 				B8C8231E23D8F9A500A2FB89 /* Assets.xcassets in Resources */,
 				B8C8231C23D8F9A300A2FB89 /* Main.storyboard in Resources */,
 			);
@@ -199,10 +239,14 @@
 			files = (
 				B888FBDE23D9D202009675B8 /* Section.swift in Sources */,
 				B8C8231923D8F9A300A2FB89 /* FirstViewController.swift in Sources */,
+				B888FBF523D9DFCE009675B8 /* TextImageTableViewCell.swift in Sources */,
 				B888FBDA23D9D184009675B8 /* UIViewController + Extensions.swift in Sources */,
+				B888FBFC23D9F2DC009675B8 /* UIView + Extensions.swift in Sources */,
+				B888FBEB23D9DD21009675B8 /* SecondViewController.swift in Sources */,
+				B888FBF823D9E801009675B8 /* CustomModel.swift in Sources */,
 				B888FBDC23D9D1D9009675B8 /* DataSource.swift in Sources */,
 				B888FBE023D9D226009675B8 /* Configurator.swift in Sources */,
-				B888FBE623D9D591009675B8 /* NibTableViewCell.swift in Sources */,
+				B888FBE623D9D591009675B8 /* TextButtonTableViewCell.swift in Sources */,
 				B888FBE223D9D380009675B8 /* PluginTableViewController.swift in Sources */,
 				B8C8231523D8F9A300A2FB89 /* AppDelegate.swift in Sources */,
 			);

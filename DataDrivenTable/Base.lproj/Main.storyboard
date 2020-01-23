@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--FirstVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="DataDrivenTable" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="T8a-tW-nTK"/>
+                    <tabBarItem key="tabBarItem" title="FirstVC" image="doc.plaintext" catalog="system" id="T8a-tW-nTK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,16 +29,38 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0C7-JN-98Y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gHd-Qm-p6l">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Cv6-Fk-gTb"/>
+                        <segue destination="jwr-hz-TRz" kind="relationship" relationship="viewControllers" id="cWl-Xc-Ptl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGU-5H-XLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
         </scene>
+        <!--SecondVC-->
+        <scene sceneID="NQH-r5-ezX">
+            <objects>
+                <viewController id="jwr-hz-TRz" customClass="SecondViewController" customModule="DataDrivenTable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9rO-xW-YCP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Oi7-k0-e9E"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SecondVC" image="doc.plaintext" catalog="system" id="mBc-nK-vDg"/>
+                    <navigationItem key="navigationItem" id="ySL-wY-bEt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajE-I3-76G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="400"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="doc.plaintext" catalog="system" width="56" height="64"/>
+    </resources>
 </document>
